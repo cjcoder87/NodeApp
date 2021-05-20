@@ -1,0 +1,49 @@
+ls shows , shows all files in directory
+
+git init, sets up code to be put in a repo
+
+npm install - download all dependencies
+
+npm list --depth=0 or npm list, showss top level dependencies
+
+npm list --all, shows all dependencies
+
+npm view "dependency" dependencies, shows dependencies of a dependency
+
+npm view "dependency" versions, shows all exisitng versions of a dependency
+
+npm install mongoose@"version such as 1.2.3" installs specific version
+
+Updating Packages
+npm outdated - shows version of outdated dependencies of project
+
+npm update - updates minor and major versions only
+
+1. npm i -g npm-check-updates, package that must be installed first to update to new major versions
+
+2. ncu -u, will allow you to update package json with new version even if its a major change, use "ncu" 
+
+3. npm install, install the latest version
+
+4. npm outdated, nothing should show now
+
+Optional -g, set as a global package
+
+Check npm -g outdated, will display all global outdated packages
+
+npm i jshint --save-dev, package that analyzes JS code
+
+Sematic Versioning
+7.4.3 
+7 = Major
+4 = Minor
+3 = Patch
+
+^7.4.3 or 7.x
+^ or x will update package if Major version doesnt change when tunning npm install
+
+~7.4.3 will update only if Major and Minor Versions are the same
+
+
+
+
